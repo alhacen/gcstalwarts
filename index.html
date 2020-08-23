@@ -2,8 +2,6 @@
 layout: default
 title: my home page
 ---
-
-
 <div id="main">
     <div id="topIcon">
         <img src="assets/images/IconWhite.svg" style="width:50px"> 
@@ -21,8 +19,22 @@ title: my home page
             <span>You & Your business</span>
         </div>
         <div>
-            <a href="#" class="btn">get in touch <span class="btnArrow">⟶<span></a>
+            <a href="#" class="button">get in touch <span class="buttonArrow">⟶<span></a>
         </div>
     </div>
 </div>
-{% include footer.html %}
+{% for card in site.data.cards %}
+    <div class="mycard">
+        <div class="bgBlurText f50 bold" style="color:{{card.headerColor}}">{{card.blurryText}}</div>
+        <div class="header f40 bold" style="color:{{card.headerColor}}">{{card.header}}</div>
+        <div class="contents row">
+            <div class="leftCol col-sm-6">
+                {{card.text}}
+            </div>
+            <div class="rightCol col-sm-5">
+                <img class="cardImg" src="{{card.img}}" style="width:100%">
+            </div>
+        </div>
+    </div>
+{% endfor %}
+    {% include footer.html %}

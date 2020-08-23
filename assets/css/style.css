@@ -13,7 +13,8 @@ body{margin:0px}
 .f50{font-size: 4rem;}
 .f64{font-size:5rem}
 .bold{font-weight:bold;}
-.btn{
+.button{
+    text-decoration: none !important;
 background-color: white; /* Green */
   border: none;
   color: black;
@@ -22,11 +23,24 @@ background-color: white; /* Green */
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
-.btnArrow{  transition: 0.3s;margin-left:0px}
-.btn:hover:hover .btnArrow,
-.btnArrow:hover {
+.button:hover{color:black}
+.bgBlurText{
+    position:absolute; 
+    opacity:.1;
+    text-shadow: 0 0 5px rgba(0,0,0,0.9);
+}
+.leftCol{margin-top:20px}
+.mycard{position:relative}
+.f40{font-size: 3rem;}
+.mycard{padding:25px}
+.header{margin-top:35px}
+.mycard {
+    font-family: 'Work Sans';
+}
+.buttonArrow{  transition: 0.3s;margin-left:0px}
+.button:hover:hover .buttonArrow,
+.buttonArrow:hover {
     margin-left:10px;
 }
 
