@@ -28,7 +28,7 @@ title: my home page
 
 {% for card in site.data.cards %}
     <div class="mycard">
-        <div class="bgBlurText f50 boldMax" style="color:{{card.headerColor}}">{{card.blurryText}}</div>
+        <div class="bgBlurText boldMax" style="font-size:4rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
         <div class="header f40 boldMax" style="color:{{card.headerColor}}">{{card.header}}</div>
         <div class="contents row">
             <div class="leftCol col-sm-6">
@@ -40,5 +40,7 @@ title: my home page
         </div>
     </div>
 {% endfor %}
-
+<div>
+    <p class="center bold" style="font-size: 75px;">Get in touch</p>
+</div>
 {% include footer.html %}
