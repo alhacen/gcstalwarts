@@ -1,0 +1,70 @@
+
+body{margin:0px}
+#main{position:relative;height:100vh}
+#homeText{position:absolute;width:auto;}
+#homeWrap{position:absolute;width:100%;width:100%;height:100vh;background-color:black;opacity:.6}
+#bgImg{height:100vh;overflow:hidden;background-color:red;position:absolute;width:100%}
+
+#topIcon{position:absolute;z-index:9;padding:10px}
+
+#homeText {
+    font-family: 'Work Sans';color:white;bottom:50px;padding:25px
+}
+.f50{font-size: 4rem;}
+.f64{font-size:5rem}
+.bold{font-weight:bold;}
+.btn{
+background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+.btnArrow{  transition: 0.3s;margin-left:0px}
+.btn:hover:hover .btnArrow,
+.btnArrow:hover {
+    margin-left:10px;
+}
+
+ /* Media Query for Mobile Devices */ 
+ @media (max-width: 480px) { 
+    .f50{font-size: 2rem;}
+    .f64{font-size:3rem}
+    #backgroundImage{
+        height:100%
+    }
+} 
+  
+/* Media Query for low resolution  Tablets, Ipads */ 
+@media (min-width: 481px) and (max-width: 767px) { 
+    .f50{font-size: 2rem;}
+    .f64{font-size:3rem}
+    #backgroundImage{
+        height:100%
+    } 
+} 
+  
+/* Media Query for Tablets Ipads portrait mode */ 
+@media (min-width: 768px) and (max-width: 1024px){ 
+    #backgroundImage{
+        width:100%
+    } 
+} 
+  
+/* Media Query for Laptops and Desktops */ 
+@media (min-width: 1025px) and (max-width: 1280px){ 
+    #backgroundImage{
+        width: 100%
+    }
+} 
+  
+/* Media Query for Large screens */ 
+@media (min-width: 1281px) { 
+    #backgroundImage{
+        width: 100%
+    }
+}

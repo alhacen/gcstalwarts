@@ -2,48 +2,38 @@
 <html lang = "en"> 
    <head> 
       <meta charset = "utf-8" /> 
-      <script type="text/javascript" src="assets/js/script.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="assets/css/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
       <title>my home page</title>
    </head>
    <body> 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <button>button1 </button>
-
-    <button>button2 </button>
-
-    <button>button3 </button>
-
-
-___
-layout:post
-title:"Navbar"
-___
-<footer>
-    <div class="container">
-        <nav class="bottom-nav">
-            <ul class="nav justify-content-center">
-                <li class="nav-item ">
-                    <a class="nav-link active" href="#">Public Relation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Youth Development</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bussiness Development</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Human Resource</a>
-                </li>
-            </ul>
-        </nav>
+      <div id="main">
+    <div id="topIcon">
+        <img src="assets/images/IconWhite.svg" style="width:50px"> 
     </div>
-</footer>
+    <div id="bgImg">
+        <img src="assets/images/bg_thumb.jpg" lazy_load="true" id="backgroundImage" > 
+    </div>
+    <div id="homeWrap">
+    </div>
+    <div id="homeText">
+        <div class="f50">
+            <span>Enchancing</span>
+        </div>
+        <div class="bold f64">
+            <span>You & Your business</span>
+        </div>
+        <div>
+            <a href="#" class="btn">get in touch <span class="btnArrow">⟶<span></a>
+        </div>
+    </div>
+</div>
 ---
 layout:default
 title:footer
@@ -51,6 +41,6 @@ title:footer
 <div>
     copyright 2020
 </div>
-
    </body>
+   <script type="text/javascript" src="assets/js/script.js"></script>
 </html>
