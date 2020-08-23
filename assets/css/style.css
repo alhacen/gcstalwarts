@@ -11,8 +11,20 @@ body{margin:0px}
     font-family: 'Work Sans';color:white;bottom:50px;padding:25px
 }
 .f50{font-size: 4rem;}
+.f20{font-size: 2rem;}
 .f64{font-size:5rem}
 .bold{font-weight:bold;}
+.bg-red{background-color: #AA410D}
+.bg-blue{background-color:#0A0491}
+.bg-green{background-color:#1A6202}
+.bg-orange{background-color:#B65C2B}
+.nav-link:hover{
+    text-decoration: none;
+    color:white;
+}
+.text-black{
+    color:black;
+}
 .btn{
 background-color: white; /* Green */
   border: none;
