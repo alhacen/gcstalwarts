@@ -4,10 +4,10 @@ title: my home page
 ---
 <div id="main">
     <div id="topIcon">
-        <img src="assets/images/IconWhite.svg" style="width:50px"> 
+        <img src="assets/images/LogoWhite.svg" style="width:150px"> 
     </div>
     <div id="bgImg">
-        <img src="assets/images/bg_thumb.jpg" lazy_load="true" id="backgroundImage" > 
+        <img src="assets/images/bg_thumb.jpg" lazy_load="true" id="" class="animate__animated animate__fadeIn" style="width:100%;height:100%; object-fit: cover;" > 
     </div>
     <div id="homeWrap">
     </div>
@@ -19,22 +19,26 @@ title: my home page
             <span>You & Your business</span>
         </div>
         <div>
-            <a href="#" class="button">get in touch <span class="buttonArrow">⟶<span></a>
+            <a href="#" class="button">Get in touch <span class="buttonArrow">⟶<span></a>
         </div>
+        {% include bottomNavbar.html %}
     </div>
+    
 </div>
+
 {% for card in site.data.cards %}
     <div class="mycard">
-        <div class="bgBlurText f50 bold" style="color:{{card.headerColor}}">{{card.blurryText}}</div>
-        <div class="header f40 bold" style="color:{{card.headerColor}}">{{card.header}}</div>
+        <div class="bgBlurText f50 boldMax" style="color:{{card.headerColor}}">{{card.blurryText}}</div>
+        <div class="header f40 boldMax" style="color:{{card.headerColor}}">{{card.header}}</div>
         <div class="contents row">
             <div class="leftCol col-sm-6">
                 {{card.text}}
             </div>
             <div class="rightCol col-sm-5">
-                <img class="cardImg" src="{{card.img}}" style="width:100%">
+                <img class="cardImg" src="assets/images/{{card.img}}" style="width:100%">
             </div>
         </div>
     </div>
 {% endfor %}
-    {% include footer.html %}
+
+{% include footer.html %}

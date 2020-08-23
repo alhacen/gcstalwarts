@@ -1,3 +1,4 @@
+function _(a){return document.getElementById(a)}
 img=document.querySelectorAll('[lazy_load="true"]');
 function load(img,i,img_count){
 console.log(i)
@@ -10,3 +11,13 @@ console.log(i)
     }
 }
 load(img,0,img.length)
+
+// window.addEventListener("resize", function(){
+//         if(window.innerHeight>window.innerWidth){
+//             _("backgroundImage").style.height="100%";
+//             _("backgroundImage").style.width="auto%";
+//         }else{
+//             _("backgroundImage").style.height="auto";
+//             _("backgroundImage").style.width="100%";
+//         }
+// });
