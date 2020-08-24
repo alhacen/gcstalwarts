@@ -42,19 +42,18 @@ title: my home page
     
 </div>
 {% include service.html %}
-<div class="mx-5">
+<div>
 {% for card in site.data.cards %}
-    <div class="mycard m-5 p-5 " id="{{card.id}}">
+    <div class="mycard" id="{{card.id}};">
+        <div class="bgBlurText boldMax  f50" style="font-size: 3rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
         <div class="contents row">
-            <div class="leftCol col-sm-6 d-flex-row justify-content-center align-items-center wow animate__animated  animate__slideInLeft ">
-                <div class="bgBlurText boldMax text-center f50 ml-4 pl-4 font-weight-bold" style="font-size:5rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
-                <div class="header f40 boldMax text-center  pt-3" style="color:{{card.headerColor}}">{{card.header}}</div>
+            <div class="leftCol col-sm-12 col-md-6 col-lg-6 wow animate__animated  animate__slideInLeft ">
+                <div class="header f40 boldMax " style="color:{{card.headerColor}}">{{card.header}}</div>
                 <div class="text-center">
                     {{card.text}}
                 </div>
-
             </div>
-            <div class="rightCol col-sm-5  animate__animated  animate__slideInRight wow">
+            <div class="rightCol col-sm-12 col-md-5 col-lg-5  animate__animated  animate__slideInRight wow">
                 <img class="cardImg" src="assets/images/{{card.img}}" style="width:100%">
             </div>
         </div>
