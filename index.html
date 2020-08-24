@@ -12,8 +12,11 @@ title: my home page
     new WOW().init();
 </script>
 <div id="main">
-    <div id="topIcon">
-        <img src="assets/images/LogoWhite.svg" style="width:150px" class=" ml-4 mt-3">
+    <div id="topIcon" class="ml-5">
+        <a href="#contact">
+        <img src="assets/images/LogoWhite.png" style="width:200px" class=" ml-5 mt-5">
+        </a>
+
     </div>
     <div id="bgImg">
         <img src="assets/images/bg_thumb.jpg" lazy_load="true" id="" class="animate__animated animate__fadeIn" style="width:100%;height:100%; object-fit: cover;" >
@@ -41,11 +44,11 @@ title: my home page
 {% include service.html %}
 <div class="mx-5">
 {% for card in site.data.cards %}
-    <div class="mycard m-5 p-5 ">
+    <div class="mycard m-5 p-5 " id="{{card.id}}">
         <div class="contents row">
             <div class="leftCol col-sm-6 d-flex-row justify-content-center align-items-center wow animate__animated  animate__slideInLeft ">
-                <div class="bgBlurText boldMax text-center ml-5 pl-5" style="font-size:4rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
-                <div class="header f40 boldMax text-center mb-5" style="color:{{card.headerColor}}">{{card.header}}</div>
+                <div class="bgBlurText boldMax text-center f50 ml-4 pl-4 font-weight-bold" style="font-size:5rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
+                <div class="header f40 boldMax text-center  pt-3" style="color:{{card.headerColor}}">{{card.header}}</div>
                 <div class="text-center">
                     {{card.text}}
                 </div>
