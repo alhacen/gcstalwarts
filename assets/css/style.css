@@ -107,3 +107,9 @@ background-color: white; /* Green */
 .navbarLink:hover{
     opacity:.9;
 }
+.footer{
+    background-color: #0F1356;
+}
+.text-orange{
+    color: #2B3470;
+}

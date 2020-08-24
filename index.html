@@ -3,7 +3,6 @@ layout: default
 title: my home page
 ---
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="css/animate.css">
 <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
 <link
         rel="stylesheet"
@@ -39,6 +38,7 @@ title: my home page
 
     
 </div>
+{% include service.html %}
 <div class="mx-5">
 {% for card in site.data.cards %}
     <div class="mycard m-5 p-5 ">
@@ -58,9 +58,7 @@ title: my home page
     </div>
 {% endfor %}
 </div>
-<div>
-    <p class="center bold" style="font-size: 75px;">Get in touch</p>
-</div>
+
 {% include footer.html %}
 
 
