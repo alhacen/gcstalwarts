@@ -8,7 +8,7 @@ body{margin:0px}
 #topIcon{position:absolute;z-index:9;padding:10px}
 
 #homeText {
-    font-family: 'Work Sans';color:white;bottom:0px;padding-left:25px;padding-right:25px
+    font-family: 'Work Sans';color:white;bottom:0px
 }
 .f50{font-size: 4rem;}
 .f20{font-size: 2rem;}
@@ -27,6 +27,9 @@ body{margin:0px}
 .nav-link:hover{
     text-decoration: none;
     color:white;
+}
+.mw{
+    width:100vw;
 }
 .text-black{
     color:black;

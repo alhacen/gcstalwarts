@@ -2,6 +2,7 @@
 layout: default
 title: my home page
 ---
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div id="main">
     <div id="topIcon">
         <img src="assets/images/LogoWhite.svg" style="width:150px"> 
@@ -11,28 +12,38 @@ title: my home page
     </div>
     <div id="homeWrap">
     </div>
-    <div id="homeText">
-        <div class="f50">
-            <span>Enchancing</span>
+        <div id="homeText">
+            <div class=" ml-5 pl-0 pl-md-5 mb-5 pb-5">
+                <div class="f50 text-white">
+                    <span>Enchancing</span>
+                </div>
+                <div class="bold f64">
+                    <span>You & Your business</span>
+                </div>
+                <div>
+                    <a href="#" class="button">Get in touch <span class="buttonArrow">⟶<span></a>
+                </div>
+            </div>
+
+            <div class="mw  ">
+                {% include bottomNavbar.html %}
+            </div>
         </div>
-        <div class="bold f64">
-            <span>You & Your business</span>
-        </div>
-        <div>
-            <a href="#" class="button">Get in touch <span class="buttonArrow">⟶<span></a>
-        </div>
-        {% include bottomNavbar.html %}
-    </div>
+
+
     
 </div>
-
+<div class="mx-5">
 {% for card in site.data.cards %}
-    <div class="mycard">
-        <div class="bgBlurText boldMax" style="font-size:4rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
-        <div class="header f40 boldMax" style="color:{{card.headerColor}}">{{card.header}}</div>
+    <div class="mycard m-5 p-5 ">
         <div class="contents row">
-            <div class="leftCol col-sm-6">
-                {{card.text}}
+            <div class="leftCol col-sm-6 d-flex-row justify-content-center align-items-center ">
+                <div class="bgBlurText boldMax text-center ml-5 pl-5" style="font-size:4rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
+                <div class="header f40 boldMax text-center mb-5" style="color:{{card.headerColor}}">{{card.header}}</div>
+                <div class="text-center">
+                    {{card.text}}
+                </div>
+
             </div>
             <div class="rightCol col-sm-5">
                 <img class="cardImg" src="assets/images/{{card.img}}" style="width:100%">
@@ -40,6 +51,7 @@ title: my home page
         </div>
     </div>
 {% endfor %}
+</div>
 <div>
     <p class="center bold" style="font-size: 75px;">Get in touch</p>
 </div>
