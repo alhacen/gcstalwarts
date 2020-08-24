@@ -1,5 +1,6 @@
 
-body{margin:0px}
+body{margin:0px;
+     font-family: serif;}
 #main{position:relative;height:100vh}
 #homeText{position:absolute;width:100%;}
 #homeWrap{position:absolute;width:100%;height:100vh;background-color:black;opacity:.6}
@@ -16,7 +17,7 @@ body{margin:0px}
 .f64{font-size:5rem}
 .bold{font-weight:bold;}
 .boldMax{font-weight: bolder;}
-.button{
+.button {
     text-decoration: none !important;
 }
 
@@ -103,3 +104,6 @@ background-color: white; /* Green */
 .center{text-align:center}
 .nav{color:white}
 .nav div{font-size:1.5rem;padding:15px}
+.navbarLink:hover{
+    opacity:.9;
+}

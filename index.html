@@ -3,17 +3,26 @@ layout: default
 title: my home page
 ---
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/animate.css">
+<script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
+<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
+<script>
+    new WOW().init();
+</script>
 <div id="main">
     <div id="topIcon">
-        <img src="assets/images/LogoWhite.svg" style="width:150px"> 
+        <img src="assets/images/LogoWhite.svg" style="width:150px" class=" ml-4 mt-3">
     </div>
     <div id="bgImg">
-        <img src="assets/images/bg_thumb.jpg" lazy_load="true" id="" class="animate__animated animate__fadeIn" style="width:100%;height:100%; object-fit: cover;" > 
+        <img src="assets/images/bg_thumb.jpg" lazy_load="true" id="" class="animate__animated animate__fadeIn" style="width:100%;height:100%; object-fit: cover;" >
     </div>
     <div id="homeWrap">
     </div>
         <div id="homeText">
-            <div class=" ml-5 pl-0 pl-md-5 mb-5 pb-5">
+            <div class=" ml-5 pl-0 pl-md-5 mb-5 pb-5 wow animate__animated  animate__bounceInLeft ">
                 <div class="f50 text-white">
                     <span>Enchancing</span>
                 </div>
@@ -21,13 +30,10 @@ title: my home page
                     <span>You & Your business</span>
                 </div>
                 <div>
-                    <a href="#" class="button">Get in touch <span class="buttonArrow">⟶<span></a>
+                    <a href="#" class="button text-large">Get in touch <span class="buttonArrow">⟶<span></a>
                 </div>
             </div>
-
-            <div class="mw  ">
                 {% include bottomNavbar.html %}
-            </div>
         </div>
 
 
@@ -37,7 +43,7 @@ title: my home page
 {% for card in site.data.cards %}
     <div class="mycard m-5 p-5 ">
         <div class="contents row">
-            <div class="leftCol col-sm-6 d-flex-row justify-content-center align-items-center ">
+            <div class="leftCol col-sm-6 d-flex-row justify-content-center align-items-center wow animate__animated  animate__slideInLeft ">
                 <div class="bgBlurText boldMax text-center ml-5 pl-5" style="font-size:4rem;color:{{card.headerColor}}">{{card.blurryText}}</div>
                 <div class="header f40 boldMax text-center mb-5" style="color:{{card.headerColor}}">{{card.header}}</div>
                 <div class="text-center">
@@ -45,7 +51,7 @@ title: my home page
                 </div>
 
             </div>
-            <div class="rightCol col-sm-5">
+            <div class="rightCol col-sm-5  animate__animated  animate__slideInRight wow">
                 <img class="cardImg" src="assets/images/{{card.img}}" style="width:100%">
             </div>
         </div>
@@ -56,3 +62,5 @@ title: my home page
     <p class="center bold" style="font-size: 75px;">Get in touch</p>
 </div>
 {% include footer.html %}
+
+
